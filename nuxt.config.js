@@ -9,7 +9,8 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
-  },
+	},
+	
   runtimeCompiler: true,
 
   css: [
