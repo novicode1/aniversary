@@ -17,7 +17,11 @@ export default {
     '~/styles/variables.css',
     'normalize.css/normalize.css',
     '~/styles/typography.css',
-  ],
+	],
+
+	generate: {
+    dir: 'public'
+  },
 
   buildModules: [
   ],
