@@ -1,6 +1,4 @@
 export default {
-	// Global page headers (https://go.nuxtjs.dev/config-head)
-  mode: 'universal',
   head: {
     title: 'Catapult',
     meta: [
@@ -18,10 +16,6 @@ export default {
     'normalize.css/normalize.css',
     '~/styles/typography.css',
 	],
-
-	generate: {
-    dir: 'public'
-  },
 
   buildModules: [
   ],
