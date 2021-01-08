@@ -10,6 +10,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  runtimeCompiler: true,
 
   css: [
     '~/styles/variables.css',
