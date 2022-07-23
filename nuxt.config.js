@@ -27,18 +27,16 @@ export default {
 
 			{ property: 'og:title', content: 'Danya + Nastya' },
 			{ property: 'og:site_name', content: 'Danya + Nastya' },
-			// { property: 'og:image', content: 'Danya + Nastya/thumbnail.png' },
+			{ property: 'og:image', content: 'https://anniversary-danya-nastya.vercel.app/static/authors.png' },
 			{ property: 'og:description', content: 'Danya + Nastya' },
-			// { property: 'og:url', content: 'Danya + Nastya' },
+			{ property: 'og:url', content: 'https://anniversary-danya-nastya.vercel.app/' },
 			{ property: 'og:image:width', content: '1200' },
 			{ property: 'og:image:height', content: '627' },
 			{ property: 'og:type', content: 'website' },
 
 
 			{ name: 'twitter:image:alt', content: 'Danya + Nastya' },
-			{ name: 'twitter:card', content: 'summary_large_image' },
-			// { name: 'twitter:site', content: '@CircusEscape' },
-			// { property: 'twitter:creator', content: '@CircusEscape' }
+			{ name: 'twitter:card', content: 'summary_large_image' }
 		],
 		link: [
 			{ rel: 'apple-touch-icon', sizes: '180x180', href: '/site.webmanifest' },
