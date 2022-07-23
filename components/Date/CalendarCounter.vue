@@ -158,19 +158,15 @@ export default {
 @media screen and (max-width: 576px) {
 	.time-parts-list {
 		border-radius: 1em;
-		background-color: var(--color-background-default);
-		box-shadow: var(--volumetric-shadow);
-		display: inline-flex;
 		width: auto;
 		max-width: 100%;
 	}
 
 	.time-part-item {
-		width: 6em;
+		width: 5em;
 		max-width: 100%;
 		min-width: initial;
 		border-radius: initial;
-		/* background-color: initial; */
 		box-shadow: none;
 		position: relative;
 	}
@@ -178,20 +174,6 @@ export default {
 
 	.time-part-item:first-child:before {
 		display: none;
-	}
-
-	.time-part-item:before {
-		content: '';
-		display: inline-block;
-		background: var(--color-background-primary);
-		opacity: 1;
-		width: 1px;
-		height: 80%;
-		transform: translate(0, -50%);
-		top: 50%;
-		left: 0;
-		position: absolute;
-		z-index: 1;
 	}
 
 	.time-part-item + .time-part-item {
