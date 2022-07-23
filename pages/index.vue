@@ -1,76 +1,25 @@
 <template>
-  <div class="content-wrapper">
-		<!-- <h1>Game</h1> -->
-		<div class="score-wrapper">
-			<h2 class="score">102 м</h2>
-		</div>
-
-		<Button @click="playAgain" class="play-again-button">
-			<Reload slot="beforeText" class="reload-icon" />
-			<span>Еще раз</span>
-		</Button>
-
-		<img src="/images/airplane.svg" class="score-illustration" alt="Score illustration" />
-  </div>
+	<Page class="page">
+		<PageContent>
+			<Spotlight />
+		</PageContent>
+	</Page>
 </template>
 
 <script>
-import Fragment from 'vue-fragment'
-import Button from '~/components/Button/Button.vue'
-
-import Reload from '~/components/icons/Reload.vue'
+import { Page, PageContent } from '~/components/PageLayout';
+import { Spotlight } from '~/containers/index';
 
 export default {
-	methods: {
-		playAgain() {
-			alert('again')
-		}
-	},
+	layout: 'dark-theme',
 
 	components: {
-		Button,
-		Reload,
+		Page,
+		Spotlight,
+		PageContent,
 	}
-}
+};
 </script>
 
 <style scoped>
-.content-wrapper {
-	background-color: #8CDBE9;
-	text-align: center;
-	padding-top: 10vh;
-	min-height: 100vh;
-}
-
-.score {
-	display: inline-block;
-	background-color: #fff;
-	padding: 0.286em 0.572em;
-	font-size: calc(2.8em + 1vw); /* 56px */
-	border-radius: 0.214em;
-	font-weight: 900;
-	margin-bottom: 0.8em;
-}
-
-.play-again-button {
-	background-color: #fff;
-	display: inline-block;
-	padding: 0.66em 1.25em;
-	font-size: 1.25em;
-	border-radius: 0.5em;
-	margin-bottom: 1em;
-	font-weight: 600;
-	color: #222;
-}
-
-.reload-icon {
-	width: 1.125em;
-	height: 1.125em;
-	font-size: 1em;
-}
-
-.score-illustration {
-	max-height: calc(100vh - 18em - 5vh);
-	width: 100%;
-}
 </style>

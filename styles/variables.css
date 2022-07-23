@@ -1,39 +1,18 @@
 :root {
-	--black: #111;
-	--primary-blue: #007AFE;
-	--secondary-blue: #0366D6;
-	--primary-orange: #FA6400;
-	--secondary-orange: #FE9500;
-	--primary-green: #57ac02;
-	--secondary-green:  #7BB342;
-	--primary-yellow: #FEBF0A;
-	--primary-brown: #E37B13;
-	--primary-red: #E33846;
-	--light-grey: #A2A2A2;
-
-	--light-green: #E9FBD6;
-	--light-blue: #E9F4FF;
-	--light-orange: #FFF6DB;
-
-	--card-shadow: 0 0 0 1px rgba(0,0,0,.05), 0 7px 25px 0 rgba(0,0,0,.03), 0 4px 12px 0 rgba(0,0,0,.03);
-
-	--feed-gradient:
-			radial-gradient(ellipse at 5% 5%, #f0acad 0%, rgba(240,172,173,0) 75%),
-			radial-gradient(ellipse at 95% 5%, #f8ae4b 0%, rgba(248,174,75,0) 75%),
-			radial-gradient(ellipse at 95% 95%, #dbb048 -15%, rgba(219,176,72,0) 75%),
-			radial-gradient(ellipse at 5% 95%, #c284e9 50%, rgba(194,132,233,0) 75%);
-
-	--map-gradient:
-			radial-gradient(ellipse at 5% 5%, #7bcf6a 0%, rgba(123,207,106,0) 75%),
-			radial-gradient(ellipse at 95% 5%, #aec154 0%, rgba(174,193,84,0) 75%),
-			radial-gradient(ellipse at 95% 95%, #68a9bb 0%, rgba(104,169,187,0) 75%),
-			radial-gradient(ellipse at 5% 95%, #5fc28a 0%, rgba(95,194,138,0) 75%);
+	--volumetric-shadow: 0 0 0 1px rgba(0,0,0,.05), 0 7px 25px 0 rgba(0,0,0,.03), 0 4px 12px 0 rgba(0,0,0,.03);
+	--flat-shadow: 0 0 0 2px rgba(0,0,0,.05);
+	--volumetric-inner-shadow: inset 0 0 0 0 rgba(255,255,255,0.25), inset 0 1px 0 0 rgba(255,255,255,0.06);
 
 	--smooth-animation: 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 	--lazy-animation: 0.18s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
-	--focus-inner-color: hsla(210, 52%, 42%, 1.00);
-	--focus-outer-color: hsla(200, 72%, 83%, 0.75);
 
-	--shadow-fat-2px: 0 0 0 2px rgba(0,0,0,.05);
+
+	--pixel-shadow: 4px 0px 0px #111111, -4px 0px 0px #111111, 0px -4px 0px #111111, 0px 4px 0px #111111, inset 0px -4px 0px rgba(17, 17, 17, 0.3);
+	--pixel-shadow-active:
+		4px 0px 0px #111111,
+		-4px 0px 0px #111111,
+		0px -4px 0px #111111,
+		0px 4px 0px #111111,
+		inset 0px 0px 0px 4px rgba(17, 17, 17, 0.3);
 }
