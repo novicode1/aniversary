@@ -5,11 +5,11 @@
 		</h2>
 
 		<ul class="time-parts-list">
-			<li v-if="days" class="time-part-item">
+			<li v-if="years" class="time-part-item">
 				<span class="time-part-value">{{ years }}</span>
 				<span class="time-part-title">years</span>
 			</li>
-			<li v-if="days" class="time-part-item">
+			<li v-if="months" class="time-part-item">
 				<span class="time-part-value">{{ months }}</span>
 				<span class="time-part-title">months</span>
 			</li>
@@ -80,23 +80,23 @@ export default {
 
 		const EVENT_HAS_STARTED = currentDate > date;
 
-			this.interval = setInterval(() => {
-				duration = moment.duration(duration + REFRESH_INTERVAL, 'milliseconds');
+		this.interval = setInterval(() => {
+			duration = moment.duration(duration + REFRESH_INTERVAL, 'milliseconds');
 
-				this.years = duration.months();
-				this.months = duration.months();
-				this.days = duration.days();
-				this.hours = duration.hours();
-				this.minutes = duration.minutes();
-				this.seconds = duration.seconds();
+			this.years = duration.years();
+			this.months = duration.months();
+			this.days = duration.days();
+			this.hours = duration.hours();
+			this.minutes = duration.minutes();
+			this.seconds = duration.seconds();
 
-				const TIME_IS_UP = this.hours === 0 && this.minutes === 0 && this.seconds === 0;
+			const TIME_IS_UP = this.hours === 0 && this.minutes === 0 && this.seconds === 0;
 
-				if (TIME_IS_UP) {
-					this.$emit('finish');
-					clearInterval(this.interval);
-				}
-			}, REFRESH_INTERVAL);
+			if (TIME_IS_UP) {
+				this.$emit('finish');
+				clearInterval(this.interval);
+			}
+		}, REFRESH_INTERVAL);
 	}
 };
 </script>
