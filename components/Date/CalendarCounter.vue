@@ -9,11 +9,11 @@
 				<span class="time-part-value">{{ years }}</span>
 				<span class="time-part-title">years</span>
 			</li>
-			<li v-if="months" class="time-part-item">
+			<li class="time-part-item">
 				<span class="time-part-value">{{ months }}</span>
 				<span class="time-part-title">months</span>
 			</li>
-			<li v-if="days" class="time-part-item">
+			<li class="time-part-item">
 				<span class="time-part-value">{{ days }}</span>
 				<span class="time-part-title">days</span>
 			</li>
